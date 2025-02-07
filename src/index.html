@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind CSS: Web Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="font-body bg-gradient-to-r from-blue-400 to-purple-500 text-white">
+
+  <div id="top"></div>
+
+  <div class="container mx-auto bg-white p-6 rounded-lg shadow-lg mt-10 text-gray-900">
+
+    <div class="flex header items-center justify-between bg-blue-500 py-6 px-8 rounded-lg shadow-lg">
+      <div class="flex logo items-center space-x-4">
+        <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t1.15752-9/475563932_605408732248535_7116443147928188467_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_ohc=gyEhjzbZOq4Q7kNvgGRHOp7&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&oh=03_Q7cD1gGxDqFX8e-flHE5tbeKMtT6SEuF_2ZwSKDpgh1cqI7fJQ&oe=67CD4104" alt="Logo" class="w-12 h-12 rounded-full border-2 border-white">
+        <h1 class="text-3xl font-bold text-white">Portfolio | Katawut Ngamkham</h1>
+      </div>
+      <nav>
+        <ul class="flex gap-x-6 text-lg font-semibold text-white">
+          <li><a href="#portfolio" class="hover:text-gray-300 transition">Portfolio</a></li>
+          <li><a href="#" class="hover:text-gray-300 transition">Resume</a></li>
+          <li><a href="#contact" class="hover:text-gray-300 transition">Contact</a></li>
+          <li><a href="#" class="hover:text-gray-300 transition">☰</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="grid grid-cols-3 gap-8 py-12">
+      <div class="bg-gradient-to-r from-blue-200 to-blue-100 p-6 rounded-lg shadow-xl transform hover:scale-105 transition">
+        <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/459045193_1422687625090513_959149849400639489_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=tQUB98Uf8xoQ7kNvgGBRx_C&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=AnVlS2nur2Cj7VI7--XPJZX&oh=00_AYD8AT7A54nqaDO1DqU9zdwKJwV6ykxp11fzkQN2ZaqQwg&oe=67ABA17B" alt="Profile" class="w-48 h-48 rounded-full border-4 border-blue-500 shadow-lg mb-4">
+        <h2 class="text-2xl font-bold mb-4">Personal Information</h2>
+        <p><strong>Full Name:</strong> Katawut Ngamkham</p>
+        <p><strong>Nickname:</strong> James</p>
+        <p><strong>Age:</strong> 19 years old</p>
+        <p><strong>Date of Birth:</strong> May 5, 2005</p>
+        <p><strong>Nationality:</strong> Thai</p>
+        <p><strong>Ethnicity:</strong> Thai</p>
+        <p><strong>Religion:</strong> Buddhism</p>
+        <p><strong>Favorite Subject:</strong> Computer Science</p>
+        <p><strong>Hobbies:</strong> Reading, Playing Games, Programming</p>
+        <p><strong>Special Skills:</strong> Computer-related skills</p>
+        <p><strong>Motto:</strong> "Don't say you've lost until you've tried."</p>
+        <p><strong>Current Address:</strong> 67/10 Moo 4, Ang Thong Subdistrict, Thapsakae District, Prachuap Khiri Khan Province, 77130, Thailand</p>
+      </div>
+      <div class="col-span-2">
+        <h1 class="text-4xl font-semibold">I am <span class="text-blue-500">Katawut Ngamkham.</span></h1>
+        <h2 class="text-xl font-light text-blue-400">Programmer | Data Analyst</h2>
+        <p class="text-gray-700">Welcome to my portfolio! I am passionate about technology and programming. Here, you will find my projects and experiences in the world of coding and data analysis.</p>
+      </div>
+    </div>
+
+    <h1 id="portfolio" class="text-3xl font-bold text-center mb-8">❰ Portfolio ❱</h1>
+    <div class="grid grid-cols-3 gap-8">
+      <div class="rounded-lg bg-blue-50 border border-blue-200 shadow-lg overflow-hidden hover:shadow-2xl transform hover:scale-105 transition">
+        <img src="https://i.pinimg.com/736x/0d/42/c5/0d42c51c82fca7b2a1360ffec4747b2a.jpg" alt="Web programming" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-4">Web Programming</h3>
+          <p class="text-gray-600">Building responsive and dynamic websites.</p>
+          <a href="WebP.html" class="block mt-4 py-2 px-4 bg-blue-500 text-white text-center rounded-lg hover:bg-blue-600 transition">View Project</a>
+        </div>
+      </div>
+      <div class="rounded-lg bg-blue-50 border border-blue-200 shadow-lg overflow-hidden hover:shadow-2xl transform hover:scale-105 transition">
+        <img src="https://i.pinimg.com/236x/0a/0e/b9/0a0eb9bec8ff0697390919b9f0e2106e.jpg" alt="Data Analysis" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-4">Cloning Website</h3>
+          <p class="text-gray-600">Analyzing and interpreting data for insights.</p>
+          <a href="web_D2.html" class="block mt-4 py-2 px-4 bg-blue-500 text-white text-center rounded-lg hover:bg-blue-600 transition">View Project</a>
+        </div>
+      </div>
+      <div class="rounded-lg bg-blue-50 border border-blue-200 shadow-lg overflow-hidden hover:shadow-2xl transform hover:scale-105 transition">
+        <img src="https://i.pinimg.com/736x/20/0a/07/200a072465dc3c288a1d5780105705f7.jpg" alt="App Development" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-4">Development</h3>
+          <p class="text-gray-600">Web development before innovative cloning.</p>
+          <a href="web_s1.html" class="block mt-4 py-2 px-4 bg-blue-500 text-white text-center rounded-lg hover:bg-blue-600 transition">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="bg-blue-500 text-white py-6 mt-10">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">Contact Information</h2>
+      <p><strong>Line:</strong> jame2500</p>
+      <p><strong>Facebook:</strong> Jame Katawut</p>
+      <p><strong>Instagram:</strong> jk.n05</p>
+      <p><strong>Phone:</strong> 092-816-3525</p>
+      <p><strong>Email:</strong> katawutth1@gmail.com</p>
+    </div>
+  </div>
+
+  <footer class="mt-12 bg-blue-900 text-center py-6">
+    <p class="text-white text-lg">© 2025 Katawut Ngamkham | All rights reserved.</p>
+    <div class="flex justify-center space-x-6 mt-4">
+      <a href="#" class="hover:text-gray-300 transition">Facebook</a>
+      <a href="#" class="hover:text-gray-300 transition">Instagram</a>
+      <a href="#" class="hover:text-gray-300 transition">LinkedIn</a>
+    </div>
+  </footer>
+
+  <a href="#top" class="fixed bottom-4 right-4 bg-blue-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-blue-600 transition-all">▲</a>
+
+</body>
+</html>

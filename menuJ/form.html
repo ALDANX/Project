@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        /* ตั้งค่าพื้นฐาน */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+
+        /* ฟอร์ม */
+        form {
+            background-color: #fff;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ป้ายกำกับ */
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* อินพุตและเท็กซ์เอเรีย */
+        form input[type="text"],
+        form textarea,
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        form textarea {
+            resize: none;
+        }
+
+        /* ปุ่ม */
+        form input[type="submit"],
+        form input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        form input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        form input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        form input[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+
+        /* กลุ่มวิทยุและเช็คบ็อกซ์ */
+        form input[type="radio"],
+        form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        form input[type="radio"] + label,
+        form input[type="checkbox"] + label {
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        /* สำหรับวิทยุและเช็คบ็อกซ์ */
+        form input[type="radio"]:not(:first-child),
+        form input[type="checkbox"]:not(:first-child) {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Element</h1>
+    <form action="https://example.com" method="post">
+        <label for="fullname">Fullname:</label>
+        <input type="text" id="fullname" name="fullname">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password">
+
+        <label>Gender:</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="undefined" name="gender" value="undefined">
+        <label for="undefined">Undefined</label>
+
+        <label>Source:</label>
+        <input type="checkbox" id="friend" name="source" value="friend">
+        <label for="friend">Friend</label>
+        <input type="checkbox" id="social" name="source" value="social">
+        <label for="social">Social</label>
+        <input type="checkbox" id="newspaper" name="source" value="newspaper">
+        <label for="newspaper">Newspaper</label>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" cols="20" rows="10"></textarea>
+
+        <label for="province">Province:</label>
+        <select id="province" name="province">
+            <option value="bangkok">Bangkok</option>
+            <option value="surat">Surat Thani</option>
+            <option value="pt">PT</option>
+        </select>
+
+        <input type="submit" value="OK">
+        <input type="reset" value="Cancel">
+    </form>
+</body>
+</html>
